@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TennisCloud</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="navbar">
+            <h1 class="logo">TennisCloud</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#signup">Sign Up</a></li>
+                    <li><a href="#search">Find Partners</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Find Your Perfect Tennis Partner</h2>
+            <p>Join TennisCloud and play with others in your area.</p>
+            <a href="#signup" class="cta-btn">Sign Up Now</a>
+        </div>
+    </section>
+
+    <!-- Signup Section -->
+    <section id="signup">
+        <h2>Sign Up</h2>
+        <form id="signup-form" action="/signup" method="POST" enctype="multipart/form-data">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" placeholder="Enter your city or ZIP code" required>
+
+            <label for="skill">Skill Level:</label>
+            <select id="skill" name="skill" required>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <label for="availability">Availability:</label>
+            <input type="date" id="availability" name="availability" required>
+
+            <label for="profile-picture">Profile Picture:</label>
+            <input type="file" id="profile-picture" name="profilePicture" accept="image/*" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search">
+        <h2>Search for Partners</h2>
+        <form id="search-form">
+            <label for="search-location">Location:</label>
+            <input type="text" id="search-location" name="search-location" placeholder="Enter your city or ZIP code" required>
+
+            <label for="search-skill">Skill Level:</label>
+            <select id="search-skill" name="search-skill" required>
+                <option value="beginner">Beginner</option>
+                <option value="intermediate">Intermediate</option>
+                <option value="advanced">Advanced</option>
+            </select>
+
+            <label for="search-availability">Availability:</label>
+            <input type="date" id="search-availability" name="search-availability" required>
+
+            <button type="submit">Find Partners</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 TennisCloud. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
